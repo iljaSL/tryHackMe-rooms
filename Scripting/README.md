@@ -16,3 +16,8 @@ Task 1 Flag: `HackBack2019`
 ## Task 2: [Gotta Catch em All]()
 
 ## Task 3: [Encrypted Server Chit Chat]()
+
+### Resources
+
+https://realpython.com/python-sockets/
+https://realpython.com/python-f-strings/
