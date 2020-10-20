@@ -10,8 +10,9 @@ I wrote both the [python](https://github.com/iljaSL/tryHackMe-rooms/blob/main/Sc
 
 Task 1 Flag: `HackBack2019`
 
-`python3 decoder.py b64.txt`<br>
-`./decoder.sh`
+#### How to run the scripts
+Python: `python3 decoder.py b64.txt`<br>
+Bash: `./decoder.sh`
 
 ## Task 2: [Gotta Catch em All]()
 
