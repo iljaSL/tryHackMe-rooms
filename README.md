@@ -1,4 +1,6 @@
-# tryHackMe-rooms
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/Scripting/images/tryhackmebaner.jpeg" alt="Logo" width="600" height="150">
+</p>
 
 ## About this project
 
