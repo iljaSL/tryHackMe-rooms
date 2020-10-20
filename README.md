@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/Scripting/images/THMlogo.png" alt="Logo" width="600" height="150">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/Scripting/images/THMlogo.png" alt="Logo" width="600" height="350">
 </p>
 
 ## About this project
