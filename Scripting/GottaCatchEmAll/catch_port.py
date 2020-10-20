@@ -3,7 +3,8 @@ import time
 import re
 import sys
 
-def Main():
+
+def main():
     host = sys.argv[1]
     port = 1337
     start_number = 0
@@ -57,4 +58,4 @@ def assign_data(data):
     return operator, new_number, next_port
 
 if __name__ == '__main__':
-    Main()
+    main()
