@@ -35,5 +35,5 @@ And the answer is: `344769.12`
 
 ### Resources
 
-[All about the Python sockets librarie](https://realpython.com/python-sockets/) <br>
+[All about the Python sockets library](https://realpython.com/python-sockets/) <br>
 [Python f-strings](https://realpython.com/python-f-strings/)
