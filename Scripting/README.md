@@ -33,7 +33,14 @@ And the answer is: `344769.12`
 
 ## Task 3: [Encrypted Server Chit Chat]()
 
+You've connected to the super secret server, send a packet with the payload ready to receive more information
+
+to decrypt and find the flag that has a SHA256 checksum of ]w\xf0\x18\xd2\xbfwx`T\x86U\xd8Ms\x82\xdc'\xd6\xce\x81n\xdeh\xf6]rb\x14c\xd9\xda send final in the next payload to receive all the encrypted flags
+
 ### Resources
 
 [All about the Python sockets library](https://realpython.com/python-sockets/) <br>
 [Python f-strings](https://realpython.com/python-f-strings/)
+https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/
+https://docs.python.org/3/library/hashlib.html
+https://www.studytonight.com/post/significance-of-prefix-b-in-a-string-in-python
