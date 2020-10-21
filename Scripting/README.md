@@ -64,8 +64,8 @@ After a successful run, we get the following flag from the server:
 ### Resources
 
 [All about the Python sockets library](https://realpython.com/python-sockets/) <br>
-[Python f-strings](https://realpython.com/python-f-strings/)
-[Symmetric encryption](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/)
-[Pythons hashlib library](https://docs.python.org/3/library/hashlib.html)
-[Python b-string](https://www.studytonight.com/post/significance-of-prefix-b-in-a-string-in-python)
+[Python f-strings](https://realpython.com/python-f-strings/)  <br>
+[Symmetric encryption](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption/)  <br>
+[Pythons hashlib library](https://docs.python.org/3/library/hashlib.html)  <br>
+[Python b-string](https://www.studytonight.com/post/significance-of-prefix-b-in-a-string-in-python)  <br>
 [AES GCM](https://wizardforcel.gitbooks.io/practical-cryptography-for-developers-book/content/symmetric-key-ciphers/aes-encrypt-decrypt-examples.html)
