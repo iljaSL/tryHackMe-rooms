@@ -51,7 +51,7 @@ And the answer is: `344769.12`
 this is what we get `You've connected to the super secret server, send a packet with the payload ready to receive more information`
 
 2. After sending another message with the payload 'ready' we get the following response back
-`to decrypt and find the flag that has a SHA256 checksum of ]w\xf0\x18\xd2\xbfwx`T\x86U\xd8Ms\x82\xdc'\xd6\xce\x81n\xdeh\xf6]rb\x14c\xd9\xda send final in the next payload to receive all the encrypted flags`
+`to decrypt and find the flag that has a SHA256 checksum of ]w\xf0\x18\xd2\xbfwx.T\x86U\xd8Ms\x82\xdc'\xd6\xce\x81n\xdeh\xf6]rb\x14c\xd9\xda send final in the next payload to receive all the encrypted flags`
 
 3. the checksum will be converted to hex to make the comparison easier.
 
