@@ -13,3 +13,4 @@ Here is a [link](https://tryhackme.com/p/yoto) to my public profile on TryHackme
 ## Rooms
 
 * [Scripting](https://github.com/iljaSL/tryHackMe-rooms/tree/main/Scripting)
+* [Mr. Robot CTF] (https://github.com/iljaSL/tryHackMe-rooms/tree/main/MrRobotCTF)
