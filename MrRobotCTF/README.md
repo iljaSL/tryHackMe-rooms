@@ -20,14 +20,14 @@ Let's begin with the enumaration! First I will check with nmap, which ports are 
 `npm -A -p- <machine ip>`
 
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%203.35.56%20PM.png" alt="Logo" width="1100" height="500">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%203.35.56%20PM.png" alt="Logo" width="550" height="250">
 </p>
 
 2 ports are open, 1 closed and it look likes the OS of the target machine is Linux, usually the reason a port will appear as closed is that there is no service listening on it and the firewall is not filtering access to the port.
 The Linux machine is running an Apache server on Port 80. Let's check out the <MachineIP:Port> inside the web browser.
 
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%203.38.52%20PM.png" alt="Logo" width="1100" height="500">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%203.38.52%20PM.png" alt="Logo" width="550" height="250">
 </p>
 
 It seems like the website is having a built in terminal. It's not possible though to use any known unix commands inside the terminal expect the one listed under 'commands'.
@@ -37,7 +37,7 @@ The next step would be to check out the folder sturcture of the website with dir
 After running successfully dirbuster, we get some interesting files listed inside the webstes folder structure. 
 
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%205.24.37%20PM.png" alt="Logo" width="1000" height="600">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%205.24.37%20PM.png" alt="Logo" width="500" height="200">
 </p>
 
 It seems like wht website has been set up with WordPress. I will come back to that later...
