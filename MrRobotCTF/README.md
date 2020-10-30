@@ -40,7 +40,14 @@ After running successfully dirbuster, we get some interesting files listed insid
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%205.24.37%20PM.png" alt="Logo" width="500" height="200">
 </p>
 
-It seems like the website has been set up with WordPress. I will come back to that later...
+It seems like the website has been set up with WordPress. We need to gain somehow access to Wordpress, let’s try something trivial.
+Username: admin
+Password: admin
+
+It did not work, but we got a clue from the error message, that the user admin does not exist, I tried it with root and we get the same result.
+
+Coming back to our dirbuster result, we still have some text files that we need to check for some more clues or even a valid user that we can use to login into wordpress.
+
 
 to be continued...
 
