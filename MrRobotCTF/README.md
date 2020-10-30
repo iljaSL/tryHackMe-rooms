@@ -41,8 +41,9 @@ After running successfully dirbuster, we get some interesting files listed insid
 </p>
 
 It seems like the website has been set up with WordPress. We need to gain somehow access to Wordpress, let’s try something trivial.
-Username: admin
-Password: admin
+
+`Username: admin` <br>
+`Password: admin`
 
 It did not work, but we got a clue from the error message, that the user admin does not exist, I tried it with root and we get the same result.
 
