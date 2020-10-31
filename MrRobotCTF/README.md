@@ -33,6 +33,10 @@ The Linux machine is running an Apache server on Port 80. Let's check out the <M
 It seems like the website is having a built in terminal. It's not possible though to use any known unix commands inside the terminal expect the one listed under 'commands'.
 Using those commands will triger some videos.
 
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-30%20at%201.09.22%20PM.png" alt="Logo" width="550" height="450">
+</p>
+
 The next step would be to check out the folder sturcture of the website with dirbuster, maybe we can find some usefull files as well.
 After running successfully dirbuster, we get some interesting files listed inside the webstes folder structure. 
 
@@ -45,9 +49,30 @@ It seems like the website has been set up with WordPress. We need to gain someho
 `Username: admin` <br>
 `Password: admin`
 
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-30%20at%201.55.10%20PM.png" alt="Logo" width="250" height="250">
+</p>
+
 It did not work, but we got a clue from the error message, that the user admin does not exist, I tried it with root and we get the same result.
 
-Coming back to our dirbuster result, we still have some text files that we need to check for some more clues or even a valid user that we can use to login into wordpress.
+Coming back to our dirbuster result, we still have some text files that we need to check for some more clues or even a valid user that we can use to login into wordpress. 
+We can't reach the text files inside the wp-login directorie yet, license.txt does not have any new clues either, but robots.txt looks really promising!
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%204.00.51%20PM.png" alt="Logo" width="600" height="250">
+</p>
+
+Let's get those two files on our system with wget. Bingo! There is the first key!
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-30%20at%201.14.32%20PM.png" alt="Logo" width="250" height="60">
+</p>
+
+The content of fsocity.dic (dictionary file) includes random data, to be more specific it looks like it is a wordlist wiht over 85000 words. 
+Which can maybe include a user and password for the Wordpress site, let's brute force it with Hydra.
+
+The command: `hydra -L fsocity.dic -p test 10.10.36.214 http-post-form "/wp-login.php:log=^USER^&pwd=^PWD:Invalid username" -t 30`
+
 
 
 to be continued...
