@@ -2,18 +2,9 @@
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%205.38.43%20PM.png" alt="Logo" width="1000" height="200">
 </p>
 
-# Table of contents
-
-- [Task](#task)
-- [Enumaration](#enumaration)
-
-## Task
-
 <p align="center">
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-10-24%20at%205.39.27%20PM.png" alt="Logo" width="1100" height="300">
 </p>
-
-## Enumaration
 
 Let's begin with the enumaration! First I will check with nmap, which ports are open and what kind of OS I'm dealing with. 
 
@@ -73,8 +64,19 @@ Which can maybe include a user and password for the Wordpress site, let's brute 
 
 The command: `hydra -L fsocity.dic -p test 10.10.36.214 http-post-form "/wp-login.php:log=^USER^&pwd=^PWD:Invalid username" -t 30`
 
+and we got the password! `ER28–****`
 
+Let's try and log in into wordpress.
 
-to be continued...
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.01.25%20PM.png" width="800" height="400">
+</p>
 
+It worked!
 
+Unfortunately there is not much valuable information inside the wordpress panel, but we have access to the appearances and with the admin rights we can actually update them and with the help of the listed tutorial we can get a reverse shell to the server! <br>
+
+[Reverse-shell-tutorial](https://www.hackingarticles.in/wordpress-reverse-shell/) <br>
+[Pentestmonkey-tutorial](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+) <br>
+[Pentestmoneky-PHP-sources-code](http://pentestmonkey.net/tools/web-shells/php-reverse-shell) <br>
