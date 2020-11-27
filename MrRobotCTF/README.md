@@ -80,3 +80,9 @@ Unfortunately there is not much valuable information inside the wordpress panel,
 [Pentestmonkey-tutorial](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
 ) <br>
 [Pentestmoneky-PHP-sources-code](http://pentestmonkey.net/tools/web-shells/php-reverse-shell) <br>
+
+Now I include the code from pentestmonkey inside the 404.php appearance site, set up the `nc` command and listen to the port I include inside the code, go to `<target-ip>/404.php` and the reverse shell was a success!
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.45.17%20PM.png" width="800" height="300">
+</p>
