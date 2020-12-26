@@ -86,3 +86,24 @@ Now I include the code from pentestmonkey inside the 404.php appearance site, se
 <p align="center">
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.45.17%20PM.png" width="800" height="300">
 </p>
+
+We can upgrade now the simple shell with this great tutorial found here [Ropnop Blog](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/).
+
+We are at the momemt inside the machine with the user daeamon, but there is another user called robot and by checking his home directorie we finnaly found the second flag!
+BUT we don't have the permission to read the file, it's nice that robot provides us his hashed password inside a file though. 
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.49.31%20PM.png" width="800" height="200">
+</p>
+
+Let's double check if it is really an md5 hashed password.
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.53.31%20PM.png" width="1400" height="200">
+</p>
+
+Yep it is an md5 hashed password, now we can easily crack it with Hashcat and we got the second flag!
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%208.00.20%20PM.png" width="1000" height="800">
+</p>
