@@ -105,7 +105,13 @@ Let's crack the md5 hashed password, we can do that with Hashcat or an online cr
 We cracked the password! And the way is cleared in order to get the second flag.
 
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%208.00.20%20PM.png" width="500" height="200">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%208.00.20%20PM.png" width="800" height="500">
 </p>
 
 After going through the directories with the user robot without any promising weakness, we can try out to spot any possibilities to gain root access, which would be as well the next logical step. There are many possibilities to  check for privilege escalation. I'm gonna try it out first with LinEnum. We can download it to the target machine by creating a simple python http server and using wget.
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/linenum-Download.png" width="1400" height="200">
+</p>
+
+After running LinEnum.sh, we get a huge log printed with lots of information.
