@@ -96,14 +96,16 @@ BUT we don't have the permission to read the file, it's nice that robot provides
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.49.31%20PM.png" width="800" height="200">
 </p>
 
-Let's double check if it is really an md5 hashed password.
+Let's crack the md5 hashed password, we can do that with Hashcat or an online cracker.
 
 <p align="center">
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%207.53.31%20PM.png" width="1400" height="200">
 </p>
 
-Yep it is an md5 hashed password, now we can easily crack it with Hashcat and we got the second flag!
+We cracked the password! And the way is cleared in order to get the second flag.
 
 <p align="center">
-    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%208.00.20%20PM.png" width="1000" height="800">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Screen%20Shot%202020-11-22%20at%208.00.20%20PM.png" width="500" height="200">
 </p>
+
+After going through the directories with the user robot without any promising weakness, we can try out to spot any possibilities to gain root access, which would be as well the next logical step. There are many possibilities to  check for privilege escalation. I'm gonna try it out first with LinEnum. We can download it to the target machine by creating a simple python http server and using wget.
