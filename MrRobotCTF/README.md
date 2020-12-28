@@ -114,4 +114,25 @@ After going through the directories with the user robot without any promising we
     <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/linenum-Download.png" width="1400" height="200">
 </p>
 
-After running LinEnum.sh, we get a huge log printed with lots of information.
+After running LinEnum.sh, we get a huge log printed with lots of information. The most importan features of LinEnum script are the potentially interesting SUID binaries and the Cron jobs.
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/Lin-Enum-Result.png" width="1400" height="700">
+</p>
+
+After some [research](https://null-byte.wonderhowto.com/how-to/use-linenum-identify-potential-privilege-escalation-vectors-0197225/), nmap seems really promising in order to pwne the machine, further [googling](https://pentestlab.blog/category/privilege-escalation/) reveals how we can abuse nmap to get the root shell.
+Let's check the permission set for nmap
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/nmapPerm.png" width="1200" height="80">
+</p>
+
+Excetuing the right commands AND there we go, we pwned the machine and got the last flag!
+
+<p align="center">
+    <img src="https://github.com/iljaSL/tryHackMe-rooms/blob/main/MrRobotCTF/images/lastFlag.png" width="900" height="800">
+</p>
+
+Why did that work? Well, older versions of Nmap had an interactive mode which allowed users to execute shell commands. Since Nmap is in the list of binaries that is executed with root privileges it is possible to use the interactive console in order to run a shell with root privileges. (Nmap versions 2.02 to 5.21)
+
+More informations on Linux Privilege Escalation by [g0tmi1k](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
